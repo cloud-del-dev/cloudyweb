@@ -15,7 +15,7 @@ foreach ($role in $s.roles) {
     Write-Output "  "
     Write-Output "Effect = $effect"
     Write-Output "  "
-  } | Out-File -FilePath .\"$($service)".md
+  } | Out-File -FilePath .\"$($service)".md -encoding utf8
 }
 
 
